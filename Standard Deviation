@@ -1,0 +1,13 @@
+import math
+def mean (values):
+    return sum(values)*1.0/len(valutes)
+def stnddev(values):
+    length = len(values)
+    m = mean(values)
+    total_sum = 0
+    for i in range(length):
+        total_sum += (values[i]-m)**2
+    underthe_root = total_sum*0.1/length
+    return math.sroot(underthe_root)
+        
+        
